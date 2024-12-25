@@ -22,6 +22,23 @@ function checkValid() {
             "./assets/texts/sinhnhatchiminhanh14.png",
             "./assets/texts/sinhnhatchiminhanh15.png",
             "./assets/texts/sinhnhatchiminhanh16.png",
+            "./assets/texts/sinhnhatchiminhanh17.png",
+            "./assets/texts/sinhnhatchiminhanh18.png",
+            "./assets/texts/sinhnhatchiminhanh19.png",
+            "./assets/texts/sinhnhatchiminhanh20.png",
+            "./assets/texts/sinhnhatchiminhanh21.png",
+            "./assets/texts/sinhnhatchiminhanh22.png",
+            "./assets/texts/sinhnhatchiminhanh23.png",
+            "./assets/texts/sinhnhatchiminhanh24.png",
+            "./assets/texts/sinhnhatchiminhanh25.png",
+            "./assets/texts/sinhnhatchiminhanh26.png",
+            "./assets/texts/sinhnhatchiminhanh27.png",
+            "./assets/texts/sinhnhatchiminhanh28.png",
+            "./assets/texts/sinhnhatchiminhanh29.png",
+            "./assets/texts/sinhnhatchiminhanh30.png",
+            "./assets/texts/sinhnhatchiminhanh31.png",
+            "./assets/texts/sinhnhatchiminhanh32.png",
+            "./assets/texts/sinhnhatchiminhanh33.png",
         ],
     };
 
@@ -52,6 +69,10 @@ function checkValid() {
                 }, 100); // Slight delay for smooth effect
             }, index * 3000); // Delay of 3 seconds between images
         });
+        setTimeout(() => {
+            var textMessage = document.getElementById("textMessage");
+            textMessage.style.display = "block"; // Hiển thị đoạn text
+        }, birthdayImages[input.value].length * 3000);
     } else {
         alert("Ngày sinh không chính xác!");
     }
